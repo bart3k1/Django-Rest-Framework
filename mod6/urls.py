@@ -16,10 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from movies.views import MoviesView, MovieView
+from movies.views import MoviesView, MovieView, PersonView, PersonsView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^movies/$', MoviesView.as_view(), name='movies'),
-    url(r'^movies/(?P<pk>\d+)/$', MovieView.as_view(), name='author-detail'),
+    url(r'^movies/(?P<pk>\d+)/$', MovieView.as_view(), name='movie-detail'),
+    url(r'^persons/$', PersonsView.as_view(), name='person'),
+    url(r'^persons/(?P<pk>\d+)/$', PersonView.as_view(), name='person-detail'),
 ]
