@@ -1,0 +1,33 @@
+import json
+
+data = json.loads(data)
+#deserial - loaduje do pythona
+
+data = json.dumps(data)
+#serial do jsona
+
+
+r ead - wczytuje
+e val - wykonuje
+p rint - printuje
+l oop - czeka na dane
+
+satq@laptok:~/Documents$ virtualenv -p `which python3` venv6
+pip install -U django==1.11
+
+pipenv
+
+ssh-keygen
+
+git remote -v 
+git remote add  origin git@github.com:bart3k1/Mod6REST.git
+git push origin +master / git push --force origin master
+git push --set-upstream origin master
+
+
+mysqldump [arguments] > file_name
+mysqldump --all-databases > dump.sql
+mysqldump --databases db1 db2 db3 > dump.sql
+mysqldump -u 'root' -p --databases mod6 > dump.sql
+
+
